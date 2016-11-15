@@ -252,11 +252,9 @@ div.pic-modal img{
 
 .img-center {
     margin: auto;
-    width: 80%;
+    width: 70%;
     height: auto;
-	webkit-filter: drop-shadow(30px 30px 7px #222);
+	-webkit-filter: drop-shadow(30px 30px 7px #222);
 	filter: drop-shadow(30px 30px 7px #222);
 }
-
-
 
