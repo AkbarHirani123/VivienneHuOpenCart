@@ -5,7 +5,7 @@
 <div class="container">
 	<div class="row is-table-row">
 		<div class="col-md-8 col-sm-12">
-			<img src="http://localhost:8888/opencart/image/catalog/Home%20Page/dress5_cleaned3.png" class="img-responsive img-center"/>
+			<img src="http://localhost:8081/viviennehuopencart/image/catalog/Home%20Page/dress5_cleaned3.png" class="img-responsive img-center"/>
 		</div>
 		<div class="col-md-4 col-sm-12 button-wrapper">
 			<h3 style="text-align: center; line-height: 30px;text-decoration:underline;">Check out the Winter Fall 2016 Collection!</h3>
