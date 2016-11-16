@@ -1,9 +1,9 @@
 /** { opacity: inherit; filter: inherit; } */
 
+
 html {
 	background: #ccc;
-	font-family: 'Raleway', sans-serif; 
-	
+	font-family: 'Raleway', sans-serif;	
 }
 img {
 	border: 0;
@@ -15,8 +15,6 @@ html, body {
 	background: rgb(255,255,255);
 	margin: 0 auto;
 	min-height: 100%;
-	/*font-size: 14px;*/
-	/*color: #aaa;*/
 	color: #555;
 }		
 
@@ -47,8 +45,28 @@ html, body {
 	color: #555;
 }
 
-.breadcrumbs a:hover {
-	background-color: rgb(218, 252, 209);
+.breadcrumb {
+	border: none;
+	background-color: white;
+}
+
+.breadcrumb li {
+	border-bottom: 2px solid transparent;
+}
+
+.breadcrumb li:hover {
+	background-color: rgba(221, 221, 221, .7);
+	padding-bottom: 1px;
+	border-bottom: 2px solid #555;
+}
+
+.breadcrumb > li:after {
+	top: 1px;
+    right: -7px;
+    width: 20px;
+    height: 20px;
+	border-right: 2px solid #555;
+	border-bottom: 2px solid #555;
 }
 
 .breadcrumbsScroll {
@@ -56,26 +74,45 @@ html, body {
 	transition: all .5s ease;
 }
 
-.sideNav {
-	padding: 270px 35px;
-	width: 272px;
-	height: 100%;
+#column-left {
+	width: 350px;
 	display: inline-block;
 	position: fixed;
-	bottom: 0;
-	background-color: rgb(197, 199, 201);
 }
 
-.sideNav a {
+#column-left a {
 	display: block;
 	text-decoration: none;
 	color: #555;
 	font-size: 16px;
+	background: transparent;
+    border: none;
+    border-left: solid 3px #555;
+    border-radius: 0px;
 }
 
-.sideNav a:hover {
+#column-left a:hover {
 	border-bottom: 2px solid;
 }
+
+.product-thumb {
+	border: none;
+	border-left: 3px solid #555;
+	
+}
+
+.product-thumb .button-group {
+	border: none;
+}
+
+.product-thumb .button-group button {
+	border-bottom: 3px solid transparent;
+}
+
+.product-thumb .button-group button:hover {
+	border-bottom: 3px solid #555;
+}
+
 
 div.pic_container {
 	width: 100%;
@@ -256,5 +293,9 @@ div.pic-modal img{
     height: auto;
 	-webkit-filter: drop-shadow(30px 30px 7px #222);
 	filter: drop-shadow(30px 30px 7px #222);
+}
+
+.container {
+	width: 1500px;
 }
 

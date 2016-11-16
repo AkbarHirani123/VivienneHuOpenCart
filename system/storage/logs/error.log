@@ -477,3 +477,13 @@
 2016-11-14 22:34:31 - PHP Notice:  Undefined variable: heading_title in /Applications/MAMP/htdocs/opencart/catalog/view/theme/mycustomtheme/template/common/home.tpl on line 19
 2016-11-14 22:35:00 - PHP Notice:  Undefined variable: heading_title in /Applications/MAMP/htdocs/opencart/catalog/view/theme/mycustomtheme/template/common/home.tpl on line 19
 >>>>>>> 04d0a306b7d4ba5ad3c0f95c952601ee4e0f21de
+2016-11-15 1:12:16 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 19
+2016-11-15 16:57:21 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 19
+2016-11-15 17:00:42 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 19
+2016-11-15 17:13:44 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 19
+2016-11-15 17:25:21 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 19
+2016-11-15 17:29:57 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 19
+2016-11-15 18:01:19 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 19
+2016-11-15 18:05:42 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 19
+2016-11-15 18:06:43 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 19
+2016-11-15 18:22:06 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 19
