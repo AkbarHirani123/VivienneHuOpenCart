@@ -8,7 +8,7 @@ testing change
     <?php } ?>
   </ul>
 </div>
-<div class="container" style="padding-top:50px;">
+<div class="container-fluid" style="padding-top:50px;">
 
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>

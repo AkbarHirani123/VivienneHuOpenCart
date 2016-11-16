@@ -16,7 +16,11 @@ html, body {
 	margin: 0 auto;
 	min-height: 100%;
 	color: #555;
-}		
+}	
+
+.align-horizontal {
+	margin: auto;
+}	
 
 .backPic {
 	display: none;
@@ -75,19 +79,21 @@ html, body {
 }
 
 #column-left {
-	width: 350px;
+	margin-left: 5px;
+	width: 300px;
 	display: inline-block;
 	position: fixed;
+    border-left: solid 3px #555;
 }
 
 #column-left a {
 	display: block;
 	text-decoration: none;
 	color: #555;
-	font-size: 16px;
+	font-size: 15px;
 	background: transparent;
     border: none;
-    border-left: solid 3px #555;
+    border-bottom: solid 2px transparent;
     border-radius: 0px;
 }
 
@@ -289,13 +295,43 @@ div.pic-modal img{
 
 .img-center {
     margin: auto;
-    width: 70%;
-    height: auto;
+    max-height: 100vh;
+    max-width: auto;
 	-webkit-filter: drop-shadow(30px 30px 7px #222);
 	filter: drop-shadow(30px 30px 7px #222);
 }
 
-.container {
-	width: 1500px;
+.carousel-fade .carousel-inner .item {
+  	opacity: 0;
+  	transition-property: opacity;
 }
 
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      	opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+              	transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      	opacity: 0;
+      	-webkit-transform: translate3d(0, 0, 0);
+              	transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      	opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+              	transform: translate3d(0, 0, 0);
+    }
+}
+
+.full-height {
+	height: 100vh;
+}
