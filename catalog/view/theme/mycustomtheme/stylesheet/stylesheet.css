@@ -349,6 +349,7 @@ footer h5 {
 .breadcrumb > li {
 	text-shadow: 0 1px 0 #FFF;
 	padding: 0 20px;
+	margin-right: 10px;
 	position: relative;
 	white-space: nowrap;
 }
@@ -552,17 +553,16 @@ footer h5 {
 	font-weight: bold;
 }
 .product-thumb .caption {
-	padding: 0 20px;
-	min-height: 180px;
+	padding: 10px 20px;
+	text-align: center;
 }
 .product-list .product-thumb .caption {
 	margin-left: 230px;
 }
 @media (max-width: 1200px) {
-.product-grid .product-thumb .caption {
-	min-height: 210px;
-	padding: 0 10px;
-}
+	.product-grid .product-thumb .caption {
+		padding: 5px 10px;
+	}
 }
 @media (max-width: 767px) {
 .product-list .product-thumb .caption {

@@ -74,6 +74,7 @@ html, body {
 .breadcrumbsScroll {
 	top: 80px;
 	transition: all .5s ease;
+	background-color: transparent;
 }
 
 .container-fluid {
@@ -85,7 +86,10 @@ html, body {
 	width: 300px;
 	display: inline-block;
 	position: fixed;
-    border-left: solid 3px #555;
+    border-left: solid 3px #555; 
+    overflow-y: scroll;
+    top:195px;
+    bottom: 0;
 }
 
 #column-left a {
@@ -105,8 +109,8 @@ html, body {
 
 .product-thumb {
 	border: none;
-	border-left: 3px solid #555;
-	
+/*	border-left: 3px solid #555;
+*/	
 }
 
 .product-thumb .button-group {
@@ -272,7 +276,7 @@ div.pic-modal img{
 
 .btn.outline {
 	background: none;
-	padding: 12px 22px;
+	padding: 10px 10px;
 }
 
 .btn-primary.outline {

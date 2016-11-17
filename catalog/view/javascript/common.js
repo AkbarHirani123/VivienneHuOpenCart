@@ -131,7 +131,9 @@ $(document).ready(function() {
 
 	// Makes tooltips work on ajax generated content
 	$(document).ajaxStop(function() {
+		console.log("here1");
 		$('[data-toggle=\'tooltip\']').tooltip({container: 'body'});
+		console.log("here2");
 	});
 });
 
@@ -318,6 +320,8 @@ var compare = {
 					$('#compare-total').html(json['total']);
 
 					$('html, body').animate({ scrollTop: 0 }, 'slow');
+
+					$('#compare-total').css({'color':'red'});
 				}
 			},
 			error: function(xhr, ajaxOptions, thrownError) {

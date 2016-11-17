@@ -1,11 +1,12 @@
 <?php echo $header; ?>
 <!-- <div class="container"> -->
+<div  style="padding-top:180px;"></div>
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
-  <div class="container-fluid" style="padding-top:125px;">
+  <div class="container-fluid">
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>

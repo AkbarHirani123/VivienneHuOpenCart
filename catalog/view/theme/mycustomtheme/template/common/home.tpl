@@ -9,7 +9,7 @@
 				
 				<div class="carousel-inner">
 					<div class="item active carousel-1">
-				        <img src="http://localhost:8888/opencart/image/catalog/Home%20Page/dress5_cleaned3.png" class="img-responsive img-center"/>
+				        <a href="http://localhost:8888/opencart/index.php?route=product/product&path=61_66&product_id=52"><img src="http://localhost:8888/opencart/image/catalog/Home%20Page/dress5_cleaned3.png" class="img-responsive img-center"/></a>
 				        <!-- Just ignore this next line of code, it's just modified so the images will show up on my localhost -->
 				        <!-- <img src="http://localhost:8081/viviennehuopencart/image/catalog/Home%20Page/dress5_cleaned3.png" class="img-responsive img-center"/> -->
 					</div>
@@ -22,7 +22,7 @@
 		</div>
 		<div class="col-md-4 col-sm-12 button-wrapper">
 			<h3 style="text-align: center; line-height: 30px; text-decoration:underline;">Check out the Winter Fall 2016 Collection!</h3>
-			<button type="button" class="btn btn-primary btn-lg outline button-center" href="#">Shop Now!</button> 
+			<a type="button" class="btn btn-primary btn-lg outline button-center" href="http://localhost:8888/opencart/index.php?route=product/category&path=61_66">Shop Now!</a> 
 		</div>
 	</div>
 </div>

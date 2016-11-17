@@ -1,6 +1,5 @@
 <?php echo $header; ?>
 <div style="padding-top:125px;"></div>
-testing change
 <div class="breadcrumbs"> <!-- Breadcrumbs fixed under to navbar -->
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -25,9 +24,9 @@ testing change
         <?php if ($thumb) { ?>
         <div class="col-sm-2"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" /></div>
         <?php } ?>
-        <?php if ($description) { ?>
+        <!--<?php if ($description) { ?>
         <div class="col-sm-10"><?php echo $description; ?></div>
-        <?php } ?>
+        <?php } ?>-->
       </div>
       <hr>
       <?php } ?>
@@ -61,13 +60,17 @@ testing change
       <div class="row">
         <div class="col-md-2 col-sm-6 hidden-xs">
           <div class="btn-group btn-group-sm">
-            <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
             <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_grid; ?>"><i class="fa fa-th"></i></button>
+            <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="form-group">
-            <a href="<?php echo $compare; ?>" id="compare-total" class="btn btn-link"><?php echo $text_compare; ?></a>
+            <?php if (preg_match('/[1-9]/', $text_compare)) { ?>
+              <a href="<?php echo $compare; ?>" id="compare-total" style="color:red;"><?php echo $text_compare; ?></a>
+            <?php } else { ?>
+              <a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a>
+            <?php } ?>
           </div>
         </div>
         <div class="col-md-4 col-xs-6">
@@ -101,13 +104,14 @@ testing change
       </div>
       <div class="row">
         <?php foreach ($products as $product) { ?>
-        <div class="product-layout product-list col-xs-12">
+        <div class="product-layout product-grid col-lg-3 col-md-4 col-sm-6 col-xs-6">
           <div class="product-thumb">
             <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
             <div>
               <div class="caption">
                 <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
-                <p><?php echo $product['description']; ?></p>
+                <!-- Product Description -->
+                <!--p><?php echo $product['description']; ?></p-->
                 <?php if ($product['price']) { ?>
                 <p class="price">
                   <?php if (!$product['special']) { ?>
@@ -120,7 +124,8 @@ testing change
                   <?php } ?>
                 </p>
                 <?php } ?>
-                <?php if ($product['rating']) { ?>
+                <!-- Product Rating -->
+                <!--<?php if ($product['rating']) { ?>
                 <div class="rating">
                   <?php for ($i = 1; $i <= 5; $i++) { ?>
                   <?php if ($product['rating'] < $i) { ?>
@@ -130,7 +135,7 @@ testing change
                   <?php } ?>
                   <?php } ?>
                 </div>
-                <?php } ?>
+                <?php } ?>-->
               </div>
               <div class="button-group">
                 <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
