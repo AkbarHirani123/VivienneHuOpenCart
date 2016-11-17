@@ -12,3 +12,6 @@ If any changes added to anywhere except catalog/view, please report them here. H
   
   Added lines 59-62 and commented out lines 64-66
   
+2. Changes made to catalog/view/themes/default/banner.tpl
+
+  Added a class to make banner images horizontally align centered.
