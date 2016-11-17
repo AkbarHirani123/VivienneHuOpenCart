@@ -3,14 +3,12 @@
 
 html {
 	background: #ccc;
-	font-family: 'Raleway', sans-serif;	
 }
 img {
 	border: 0;
 }
 html, body {
 	font-family: 'Raleway', sans-serif;
-
 	display: block;
 	background: rgb(255,255,255);
 	margin: 0 auto;
@@ -76,6 +74,10 @@ html, body {
 .breadcrumbsScroll {
 	top: 80px;
 	transition: all .5s ease;
+}
+
+.container-fluid {
+	/*margin-top: 125px;*/
 }
 
 #column-left {
@@ -255,7 +257,15 @@ div.pic-modal img{
 	display: inline;
 }
 
-/* Custom Bootstrap buttom */
+.nav-tabs li a {
+	border-radius: 0px;
+}
+
+.form-control {
+	border-radius: 0px;
+}
+
+/* Custom Bootstrap button */
 .btn.sharp {
   border-radius:0;
 }
@@ -272,12 +282,15 @@ div.pic-modal img{
 	transition: all .7s ease;
 }
 
-.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary, 
+#button-cart {
 	color: #444;
 	border-color: #444;
+	border-radius: 0px;
 	background-color: #fff;
+	background-image: none;
 }
-.btn-primary.outline:active, .btn-primary.outline.active {
+.btn-primary.outline:active, .btn-primary.outline.active, #button-cart:active {
 	border-color: #444;
 	color: #444;
 	box-shadow: none;

@@ -549,3 +549,5 @@
 2016-11-16 23:13:11 - PHP Notice:  Undefined variable: heading_title in /Applications/MAMP/htdocs/opencart/catalog/view/theme/mycustomtheme/template/common/home.tpl on line 28
 2016-11-16 23:13:27 - PHP Notice:  Undefined variable: heading_title in /Applications/MAMP/htdocs/opencart/catalog/view/theme/mycustomtheme/template/common/home.tpl on line 28
 2016-11-16 23:14:21 - PHP Notice:  Undefined variable: heading_title in /Applications/MAMP/htdocs/opencart/catalog/view/theme/mycustomtheme/template/common/home.tpl on line 28
+2016-11-16 22:35:06 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 28
+2016-11-16 22:38:03 - PHP Notice:  Undefined variable: heading_title in C:\wamp64\www\VivienneHuOpenCart\catalog\view\theme\mycustomtheme\template\common\home.tpl on line 30

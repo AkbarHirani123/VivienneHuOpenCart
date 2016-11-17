@@ -1,6 +1,9 @@
 $(document).ready(function() {
-	// $('#slider').attr('id', while (i < ){})
+	
+	// fixes breadcrumbs to topNav on all pages
+	$('.breadcrumb').addClass('breadcrumbs');
 
+	// make modal popup work
 	$('.modal-content-box').each(function(index) {
 		$(this).attr('id', 'box' + index);
 	});
@@ -23,6 +26,7 @@ $(document).ready(function() {
 		$(this).css('border-bottom', '3px solid black');
 	});
 
+	// zoom in on images
 	$('.quick-view-main').mouseover(function() {
 		$(this).addClass('quick-view-transition');
 	});
@@ -41,9 +45,7 @@ $(document).ready(function() {
 		}
 	});
 
-	function switchPic() {}
-
-
+	// show back view when mouse stays on object
 	var config = {
 		over: function() {
 			$(this).fadeOut(400);
