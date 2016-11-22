@@ -1,6 +1,7 @@
 <?php
 class ControllerCommonHeader extends Controller {
 	public function index() {
+
 		// Analytics
 		$this->load->model('extension/extension');
 
@@ -146,6 +147,8 @@ class ControllerCommonHeader extends Controller {
 		} else {
 			$data['class'] = 'common-home';
 		}
+
+		
 
 		return $this->load->view('common/header', $data);
 	}

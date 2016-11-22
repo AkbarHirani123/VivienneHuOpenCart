@@ -59,7 +59,15 @@
       
       </div>
       <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav nav-justified list-inline">
+        <!-- <li> -->
+          <div class="logoLI clearfix hidden-xs"
+            <!-- Brand -->
+            <a class="img-responsive" href="/"><img class="logo clearfix hidden-xs" src="img/vh.png" alt="Vivienne Hu Logo"></a>
+            <!-- <a class="img-responsive name-logo" href="/"><img class="logo-name clearfix hidden-xs" src="img/viviennehu.png" alt="Vivienne Hu Logo"></a> -->
+          </div>
+        <!-- </li> -->
+        <ul class="nav nav-justified list-inline pull-right">
+          
           <?php foreach ($categories as $category) { 
             if ( ($category['children']) && ($category['name'] !== 'Couture') ) { ?>
               <li>
@@ -80,18 +88,13 @@
               <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
             <?php } ?>
           <?php } ?>
-          <li>
-            <div class="logoLI clearfix hidden-xs"
-              <!-- Brand -->
-              <a class="img-responsive" href="/"><img class="logo clearfix hidden-xs" src="img/vh.png" alt="Vivienne Hu Logo"></a>
-              <a class="img-responsive name-logo" href="/"><img class="logo-name clearfix hidden-xs" src="img/viviennehu.png" alt="Vivienne Hu Logo"></a>
-            </div>
-          </li>
+          
           <li><div><a href="#about">VHNY   <span class="label label-danger">New</span></a></div></li>
           <li><div><a href="#about">Press</a></div></li>
         </ul>
       </div> <!-- .nav-collapse -->
     </div>
   </nav>
+
 </header>
 <?php } ?>

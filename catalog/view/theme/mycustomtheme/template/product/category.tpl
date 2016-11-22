@@ -74,17 +74,21 @@
           </div>
         </div>
         <div class="col-md-4 col-xs-6">
-          <div class="form-group input-group input-group-sm">
-            <label class="input-group-addon" for="input-sort"><?php echo $text_sort; ?></label>
+          <h3 id="sort-toggle">Sort</h3>
+          <div id="sort-content">
+          <!-- <div class="form-group input-group input-group-sm"> -->
+            <!-- <label class="input-group-addon" for="input-sort"><?php echo $text_sort; ?></label> -->
             <select id="input-sort" class="form-control" onchange="location = this.value;">
               <?php foreach ($sorts as $sorts) { ?>
               <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
-              <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
+              <div class="sort-options"><option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option></div>
+              <!-- <p class="sort_options"></p> -->
               <?php } else { ?>
               <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
               <?php } ?>
               <?php } ?>
             </select>
+          <!-- </div> -->
           </div>
         </div>
         <div class="col-md-3 col-xs-6">

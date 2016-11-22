@@ -5,6 +5,13 @@ a{
 	letter-spacing: 1.5px;
 }
 
+.dropdown-menu li > a:hover {
+    text-decoration: none;
+     color: #222; 
+     background-color: #ddd; 
+     background-image: none; 
+}
+
 /* Media Query for mobile 300px screen to 748px */
 @media (min-width: 330px) {
 
@@ -15,6 +22,17 @@ a{
 	.navbar.navbar-inverse {
 		height: 100px;
 		transition: all .75s ease;
+	}
+
+	.dropdown-menu {
+		border-radius: 0px;
+		border: none;
+	}
+
+	.nav-justified {
+		width: auto;
+		display: inline-block;
+		margin-top: 15px;
 	}
 
 	/* Collapsable menu stuff */
@@ -39,7 +57,7 @@ a{
 		position: relative;
 		display: block;
 		text-decoration: none;
-		padding: 10px 15px;
+		/*padding: 10px 15px;*/
 	}
 
 	/* dropdown two column stuff */
@@ -73,7 +91,7 @@ a{
 	#lower-navbar a:hover, #lower-navbar a:focus #lower-navbar li:hover, #lower-navbar li:focus{
 		color: #fff;
 	    text-decoration: underline;
-	    background-color: #222;
+	    background-color: #585858;
 	}
 	.nav.navbar-nav.pull-right {
 		margin-top: 0px;
@@ -89,9 +107,10 @@ a{
 
 	/* make navbar inverse */
 	.navbar.navbar-inverse.navbar-fixed-top {
-		background: transparent;
+		/*background: transparent;*/
 		border-bottom:1px solid transparent;
-		height: 125px;
+		/*height: 125px;*/
+		height: 90px;
 		transition: all .5s ease;
 		z-index: 100;
 	}
@@ -105,7 +124,7 @@ a{
 
 	/* Horizontally equate the width of all lis */
 	.nav-justified>li {
-		width:5%;
+		width: 200px;
 	}
 
 	/* Vertically align to bottom menu items */
@@ -134,9 +153,9 @@ a{
 		position: relative;
 		display: block;
 		text-decoration: none;
-		padding: 10px 0px;
-		color: #222;
-		border: 1px solid transparent;
+		/*padding: 10px 0px;*/
+		/*color: #222;*/
+		/*border: 1px solid transparent;*/
 		transition: all .7s ease;
 	}
 
@@ -154,8 +173,8 @@ a{
 	.nav .open > li > div > a, .nav .open > li > div > a:focus, .nav .open > li > div > a:hover
 	 {
 		background-color: transparent;
-		color: #222;
-		border: 1px solid #222;
+		color: #ddd;
+		/*border: 1px solid #222;*/
 	}
 
 	/* make responsive image fit to li in navigation */
@@ -167,18 +186,22 @@ a{
 
 	/* Logo size in the Navigation */
 	.logo {
-		width: 27%;
-		height: auto;
+		width: auto;
+		height: 80px;
+		margin-top: 5px;
+		display: inline-block;
+
 	}
 
 	.logo-name {
-		width: 95%;
-		height: auto;
+		width: auto;
+		height: 35px;
+		margin-top: 3px;
 	}
 
 	/* Image box background */
 	.logoLI.clearfix {
-		transform: translateY(0%);
+		/*transform: translateY(0%);
 		background: #444;
 		z-index: 0;
 		height:145px;
@@ -186,7 +209,8 @@ a{
 		padding-right: 10px;
 		-webkit-box-shadow: 0px 0px 10px 5px rgba(34,34,34,0.6);
 		-moz-box-shadow: 0px 0px 10px 5px rgba(34,34,34,0.6);
-		box-shadow: 0px 0px 10px 5px rgba(34,34,34,0.6);	
+		box-shadow: 0px 0px 10px 5px rgba(34,34,34,0.6);	*/
+		display: inline-block;
 	}
 	.logoLI.clearfix > a:hover, .logoLI.clearfix > a:focus { border: 1px solid transparent; }
 

@@ -2,6 +2,12 @@ $(document).ready(function() {
 	
 	// fixes breadcrumbs to topNav on all pages
 	$('.breadcrumb').addClass('breadcrumbs');
+	$('.breadcrumbs').append('<div class="cart pull-right">' + 
+		'<a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a>' + 
+		'<a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a>' + 
+		'</div>');
+
+	// $('#content').addClass('col-sm-offset-3');
 
 	// make modal popup work
 	$('.modal-content-box').each(function(index) {
@@ -43,6 +49,11 @@ $(document).ready(function() {
 		if (event.target.className == 'modal') {
 			$('.modal').css('display', 'none');
 		}
+	});
+
+
+	$('#sort-toggle').click(function() {
+		$('#sort-content').css('display', 'block');
 	});
 
 	// show back view when mouse stays on object

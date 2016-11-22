@@ -5,17 +5,17 @@
       <?php if ($category['children']) { ?>
         <?php foreach ($category['children'] as $child) { ?>
           <?php if ($child['category_id'] == $child_id) { ?>
-            <a href="<?php echo $child['href']; ?>" class="active">&nbsp;&nbsp;&nbsp;- <?php echo $child['name']; ?></a>
+            <a href="<?php echo $child['href']; ?>" class="active">&nbsp;&nbsp;&nbsp; <?php echo $child['name']; ?></a>
           <?php } else { ?>
-            <a href="<?php echo $child['href']; ?>" class="">&nbsp;&nbsp;&nbsp;- <?php echo $child['name']; ?></a>
+            <a href="<?php echo $child['href']; ?>" class="">&nbsp;&nbsp;&nbsp; <?php echo $child['name']; ?></a>
           <?php } ?>
           <?php if ($child['children']) { ?>
             <?php foreach ($child['children'] as $child_2) { ?>
               <?php if ($child_2['category_id'] == $child_id) { ?>
-                <a href="<?php echo $child_2['href']; ?>" class=" active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 
+                <a href="<?php echo $child_2['href']; ?>" class=" active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                 <?php echo $child_2['name']; ?></a>
               <?php } else { ?>
-                <a href="<?php echo $child_2['href']; ?>" class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 
+                <a href="<?php echo $child_2['href']; ?>" class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                 <?php echo $child_2['name']; ?></a>
               <?php } ?>
             <?php } ?> <!-- End of foreach for child_2 -->

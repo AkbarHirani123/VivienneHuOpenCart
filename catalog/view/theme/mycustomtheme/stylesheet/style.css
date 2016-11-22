@@ -35,7 +35,7 @@ html, body {
 }
 
 .breadcrumbs {
-	top: 125px;
+	top: 100px;
 	position: fixed;
 	width: 100%;
 	z-index: 10;
@@ -71,10 +71,26 @@ html, body {
 	border-bottom: 2px solid #555;
 }
 
+.breadcrumb i {
+	font-size: 20px;
+}
+
 .breadcrumbsScroll {
 	top: 80px;
 	transition: all .5s ease;
 	background-color: transparent;
+}
+
+.cart {
+	padding-right: 30px;
+}
+
+.cart a {
+	margin-right: 30px;
+}
+
+.cart a:hover {
+	background: #ddd;
 }
 
 .container-fluid {
@@ -105,6 +121,10 @@ html, body {
 
 #column-left a:hover {
 	border-bottom: 2px solid;
+}
+
+#column-left a.active {
+	font-weight: bold;
 }
 
 .product-thumb {
@@ -351,4 +371,18 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 .full-height {
 	height: 100vh;
+	margin-top: 30px;
+}
+
+
+#sort-content {
+	display: none;
+	height: 100px;
+	width: 300px
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.sort-options {
+	height: 30px;
+	width: 50px;
 }
