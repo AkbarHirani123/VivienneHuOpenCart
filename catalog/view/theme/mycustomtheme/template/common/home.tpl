@@ -22,7 +22,7 @@
 		</div>
 		<div class="col-md-4 col-sm-12 button-wrapper">
 			<h3 style="text-align: center; line-height: 30px; text-decoration:underline;">Check out the Winter Fall 2016 Collection!</h3>
-			<a type="button" class="btn btn-primary btn-lg outline button-center" href="http://localhost:8888/opencart/index.php?route=product/category&path=61_66">Shop Now!</a> 
+			<a type="button" class="btn btn-primary btn-lg outline button-center" href="http://localhost:8081/viviennehuopencart/index.php?route=product/category&path=61_66">Shop Now!</a> 
 		</div>
 	</div>
 </div>
