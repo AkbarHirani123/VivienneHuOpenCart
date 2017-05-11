@@ -54,8 +54,8 @@
             $("#"+item).css({left: 0, top: 0, transition: "all .5s ease"});
             $($this).find(">:first-child").attr("class","ui-droppable");
             $($this).find(">:first-child").children().each(function(){$(this).css("display","block");});
-            $("#"+item).draggable("enable", 1);
             $this.removeClass(item);
+            $("#"+item).draggable("enable", 1);
         }
     }
     function changeLeftEspot(){
@@ -122,16 +122,37 @@
                 el.className = "show-content";
             }
         }
-    }
+    }/*
     var elementList = $(".draggable-lens");
-    for (var i = 1; i <= elementList.length; i++) {
+    for (var i = 1; i <= elementList.length; i++) {*/
+        var i ='1';
         $("#draggable-lens-div-"+i).draggable({ 
             handle: "#lens-"+i+", #lens-"+i+"-text",
             start: function(ev, ui) {
                 ui.helper.css('transition', '');
             } 
         });
-    }
+        i='2';
+        $("#draggable-lens-div-"+i).draggable({ 
+            handle: "#lens-"+i+", #lens-"+i+"-text",
+            start: function(ev, ui) {
+                ui.helper.css('transition', '');
+            } 
+        });
+        i='3';
+        $("#draggable-lens-div-"+i).draggable({ 
+            handle: "#lens-"+i+", #lens-"+i+"-text",
+            start: function(ev, ui) {
+                ui.helper.css('transition', '');
+            } 
+        });
+        i='4';
+        $("#draggable-lens-div-"+i).draggable({ 
+            handle: "#lens-"+i+", #lens-"+i+"-text",
+            start: function(ev, ui) {
+                ui.helper.css('transition', '');
+            } 
+        });
     var elementList2 = $(".droppable");
     for (var i = 1; i <= elementList2.length; i++) {
         $( "#droppable-div-"+i ).droppable({
@@ -147,9 +168,9 @@
                 $.each(classList, function(index, item) {
                     if(bol){ 
                         $("#"+item).css({left: 0, top: 0, transition: "all .5s ease"});
-                        $("#"+item).draggable("disable", 1);
                         $this.removeClass(item);
                         $this.parent().removeClass(item);
+                        $("#"+item).draggable("disable", 1);
                         return false;
                     }
                     if (item === 'ui-state-highlight') {
