@@ -11,44 +11,7 @@
             modal.className = "hide-content";
             changeLeftEspot();
         }
-    }/*
-    $("#draggable-lens-div-1").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/ef-28-300mm-f-35-56l-is-usm';
-    });
-    $("#draggable-lens-div-2").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/lenses-flashes/ultra-wide-zoom-lenses';
-    });
-    $("#draggable-lens-div-3").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/smart-assistant-cameras';
-    });
-    $("#draggable-lens-div-4").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/ef-28-300mm-f-35-56l-is-usm';
-    });
-    $("#draggable-lens-div-5").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/lenses-flashes/ultra-wide-zoom-lenses';
-    });
-    $("#draggable-lens-div-6").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/smart-assistant-cameras';
-    });
-    $("#draggable-lens-div-7").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/ef-28-300mm-f-35-56l-is-usm';
-    });
-    $("#draggable-lens-div-8").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/lenses-flashes/ultra-wide-zoom-lenses';
-    });
-    $("#draggable-lens-div-9").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/smart-assistant-cameras';
-    });
-    $("#draggable-lens-div-10").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/ef-28-300mm-f-35-56l-is-usm';
-    });
-    $("#draggable-lens-div-11").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/lenses-flashes/ultra-wide-zoom-lenses';
-    });
-    $("#draggable-lens-div-12").on("click", function() {
-        location.href = 'https://shop.usa.canon.com/shop/en/catalog/smart-assistant-cameras';
-    });*/
-    
+    }
     function hideNav() {
         $("#select-nav").css({
             "height":"0",
