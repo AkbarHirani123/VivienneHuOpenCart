@@ -206,7 +206,7 @@
                     }
                 });
                 console.log("Droppable ui draggable: "+$id);
-                $("#"+$id).draggable("disable", 1);
+                $id.draggable("disable", 1);
             }
         });
     }
