@@ -45,7 +45,7 @@
             $($this).find(">:first-child").attr("class","ui-droppable");
             $($this).find(">:first-child").children().each(function(){$(this).css("display","block");});
             console.log("clearImage Item: "+item);
-            $("#"+item).draggable('enable');
+            $("#"+item).draggable({ disabled: false });
             $this.removeClass(item);
         }
         $this = $("#drag-main-content .default-right");
@@ -55,7 +55,7 @@
             $("#"+item).css({left: 0, top: 0, transition: "all .5s ease"});
             $($this).find(">:first-child").attr("class","ui-droppable");
             $($this).find(">:first-child").children().each(function(){$(this).css("display","block");});
-            $("#"+item).draggable('enable');
+            $("#"+item).draggable({ disabled: false });
             $this.removeClass(item);
         }
     }
@@ -148,7 +148,7 @@
                 $.each(classList, function(index, item) {
                     if(bol){ 
                         $("#"+item).css({left: 0, top: 0, transition: "all .5s ease"});
-                        $("#"+item).draggable('enable');
+                        $("#"+item).draggable({ disabled: false });
                         $this.removeClass(item);
                         $this.parent().removeClass(item);
                         return false;
@@ -170,7 +170,7 @@
                     }
                 });
                 console.log("Droppable ui draggable: "+$id);
-                $("#"+$id).draggable('disable');
+                $("#"+$id).draggable({ disabled: true });
             }
         });
     }
